@@ -1,0 +1,55 @@
+{
+  "meta": {
+    "title": "MCore Academy — Foundations",
+    "version": "0.1.0",
+    "modules": [
+      { "id":"m1","title":"Getting Started","lessons":["l01","l02"] },
+      { "id":"m2","title":"Infrastructure Foundations","lessons":["l03","l04"] },
+      { "id":"m3","title":"Security Fundamentals","lessons":["l05"] }
+    ]
+  },
+  "lessons": [
+    { "id":"l01","title":"Welcome to MCore Academy","tags":["intro","orientation"],
+      "summary":"What MCore Academy is, who it serves, how to use this platform.",
+      "content":[
+        {"type":"p","text":"MCore Academy is a free infrastructure education institution. Governing principle: Engineering Intelligence for the World."},
+        {"type":"h","text":"Learning loop"},
+        {"type":"p","text":"Learn → Build → Break → Observe → Troubleshoot → Automate → Prove."},
+        {"type":"h","text":"What you get"},
+        {"type":"list","items":["Structured learning paths","Hands-on labs","Assessments with feedback","Evidence of demonstrated competence"]}
+      ]},
+    { "id":"l02","title":"How to Use This Platform","tags":["orientation","ui"],
+      "summary":"Sidebar navigation, progress tracking, and lesson structure.",
+      "content":[
+        {"type":"p","text":"The left sidebar contains modules and lessons. Click any lesson to open it here."},
+        {"type":"h","text":"Progress"},
+        {"type":"p","text":"Mark a lesson complete to update your local progress bar. Progress is stored in your browser only."},
+        {"type":"note","text":"Phase 4 adds learner accounts and cross-device sync."}
+      ]},
+    { "id":"l03","title":"What is Infrastructure","tags":["infra","basics"],
+      "summary":"Networks, servers, storage, and how they compose into systems.",
+      "content":[
+        {"type":"p","text":"Infrastructure is the physical and logical foundation on which applications run."},
+        {"type":"h","text":"Four layers"},
+        {"type":"list","items":["Compute — CPUs, VMs, containers","Network — routing, switching, DNS","Storage — block, file, object","Orchestration — automation and control planes"]},
+        {"type":"note","text":"Interactive labs arrive in Phase 5 as portable micro-lab definitions."}
+      ]},
+    { "id":"l04","title":"Linux Fundamentals","tags":["linux","cli"],
+      "summary":"Processes, files, permissions, and the shell.",
+      "content":[
+        {"type":"h","text":"Every process has an owner"},
+        {"type":"code","code":"whoami\nps aux | head"},
+        {"type":"h","text":"Every file has a permission triple"},
+        {"type":"p","text":"Owner, group, other — each with read, write, execute."},
+        {"type":"code","code":"ls -la /etc"}
+      ]},
+    { "id":"l05","title":"Security Fundamentals","tags":["security","defense"],
+      "summary":"Threat models, least privilege, defense in depth.",
+      "content":[
+        {"type":"h","text":"Core principles"},
+        {"type":"list","items":["Verify explicitly","Least privilege","Assume breach","Micro-segmentation","Continuous verification"]},
+        {"type":"h","text":"Never trust input"},
+        {"type":"p","text":"All external content — files, APIs, web pages — is untrusted until validated."}
+      ]}
+  ]
+}
